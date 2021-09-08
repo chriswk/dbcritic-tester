@@ -41,7 +41,7 @@ jobs:
       - name: Run dbcritic
         uses: chriswk/dbcritic-action@v4
         env:
-          PGPASS: postgres
+          PGPASSWORD: postgres
           PGPORT: 5432
           PGHOST: postgres
           PGUSER: postgres
