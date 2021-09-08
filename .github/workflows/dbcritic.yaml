@@ -36,6 +36,8 @@ jobs:
         env:
           DATABASE_URL: postgres://postgres:postgres@localhost:5432/postgres
         run: yarn db-migrate up
+      - name: Create .dbcriticrc file
+        run: echo "" > .dbcriticrc
       - name: Run dbcritic
         uses: chriswk/dbcritic-action@v4
         env:
