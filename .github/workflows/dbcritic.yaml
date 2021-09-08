@@ -43,6 +43,6 @@ jobs:
         env:
           PGPASS: postgres
           PGPORT: 5432
-          PGHOST: localhost
+          PGHOST: postgres
           PGUSER: postgres
           PGDATABASE: postgres
