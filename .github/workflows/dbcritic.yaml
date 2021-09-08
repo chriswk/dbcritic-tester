@@ -37,7 +37,7 @@ jobs:
           DATABASE_URL: postgres://postgres:postgres@localhost:5432/postgres
         run: yarn db-migrate up
       - name: Run dbcritic
-        uses: chriswk/dbcritic-action@v3
+        uses: chriswk/dbcritic-action@v4
         env:
           PGPASS: postgres
           PGPORT: 5432
